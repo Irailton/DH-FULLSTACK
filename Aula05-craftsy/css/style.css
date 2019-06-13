@@ -1,0 +1,173 @@
+*html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: lightblue;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* ============= MENU ================= */
+header{
+    width: 960px;
+    height: 80px;
+    background-color: orange;
+    margin: 15px auto;
+    display: block;
+}
+
+header #logo{
+    position: absolute;
+    margin: -12px 0 0 -27px;
+}
+
+nav{
+    float: right;
+    margin: 12px 85px 10px -50px;
+
+}
+nav ul li{
+    display: inline-block;
+    margin-left: 40px;
+    color: #fff;
+   
+}
+/*============ CONTEUDO PRINCIPAL ============ */
+main{
+    margin: 50px auto;
+    width: 960px;
+    background-color: #fff;
+}
+
+.product{
+    display: inline-block;
+    margin-top: 10px;
+    -webkit-transition: all 0.8s ease-in;
+    -moz-transition: all 0.8s ease-in;
+    transition: all 0.8s ease-in-out;
+}
+
+.product .box:hover{
+    border-radius: 20px;
+    -webkit-filter: drop-shadow(1px 1px 3px black);
+    filter: drop-shadow(1px 1px 3px black);
+    cursor: pointer;
+}
+
+.product .box{
+    width: 300px;
+    height: 200px;
+    margin: 8px;
+    text-align: center;
+}
+
+.box .name-product h3{
+    margin: -2px auto;
+    color:#fff;
+    line-height: 36px;
+    transition: background-color 0.8s ease-in;
+
+}
+.product:hover h3{
+    font-weight: bold;
+    background-color: #000;
+}
+.box button{
+    display: inline-block;
+    background-color: orange;
+    border-radius: 13px;
+    border:none;
+    width: 100px;
+    height: 30px;
+    font-size: 16px;
+    margin-top: 40px;
+    color: #fff;
+    transition: background-color 0.8s ease-in;
+}
+
+.product:hover button {
+	background-color: #bb0044;
+	
+}
+.product .box-1{
+    background-image: url("../img/produto-1.png");
+
+}
+.product .box-2{
+    background-image: url("../img/produto-2.png");
+
+}
+.product .box-3{
+    background-image: url("../img/produto-3.png");
+
+}
+.product .box-4{
+    background-image: url("../img/produto-4.png");
+
+}
+.product .box-5{
+    background-image: url("../img/produto-5.png");
+
+}
+.product .box-6{
+    background-image: url("../img/produto-6.png");
+
+}
+.product .box-7{
+    background-image: url("../img/produto-7.png");
+
+}
+.product .box-8{
+    background-image: url("../img/produto-8.png");
+
+}
+.product .box-9{
+    background-image: url("../img/produto-9.png");
+
+}
+.product .box-10{
+    background-image: url("../img/produto-10.jpg");
+
+}
+.product .box-11{
+    background-image: url("../img/produto-11.png");
+
+}
+.product .box-12{
+    background-image: url("../img/produto-12.png");
+
+}
+.product .box img{
+    float: right;
+    margin: 10px;
+}
+
+.box .name-product{
+    background-color: rgba(45, 52, 54,0.6);
+    text-align: center;
+    height: 35px;
+    width: 100%;
+    display: inline-block;
+}
+
+
+/* ============Foooter===================*/
+footer {
+    background-color: orange;
+    height: 80px;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 16px 16px 0 0;
+    padding: 0;
+    
+}
+footer h5{
+    color:#fff;
+    padding-top: 35px;
+    line-height: 20px;
+}
+
+
+    
