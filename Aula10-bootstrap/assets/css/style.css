@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Sniglet');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Sniglet', sans-serif;
+}
+
+/* Altera o tamanho da barra de rolagem */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Altera a cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Altera a cor e a borda da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  border: 1px solid #f1f1f1;
+  background: #343a40;
+}
+
+/* Altera a cor da barra de rolagem quando o mouse é passado por cima da barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+header {
+  background-color: transparent;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  transition: all 0.5s;
+}
+
+header nav ul {
+  width: 50vw;
+}
+
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2em;
+}
+
+header nav img {
+  width: 50px;
+  height: 50px;
+}
+
+header nav span {
+  color: #fff;
+  font-size: 1.5em
+}
+
+a:hover {
+  color: #fff;
+}
+
+.scrolling {
+  background-color: #343a40;
+  transition: all 0.5s;
+  font-size: 1em;
+}
+
+.scrolling nav a {
+  font-weight: lighter;
+  color: #fff;
+}
+
+.scrolling nav span {
+  font-weight: lighter;
+  color: #fff;
+}
+
+a.goTop {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  padding: 15px 25px 10px;
+  border-radius: 10px;
+  font-size: 1.3em;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 3;
+}
+
+a.goTop:hover {
+  text-decoration: none;
+}
+
+section.main-content {
+  background-image: url('../img/bg-header.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+section.main-content h1 {
+  font-size: 4em;
+  color: #fff;
+}
+
+section.main-content p {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+section.main-content a {
+  background-color: #343a40;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 10px;
+  padding: 20px 50px;
+}
+
+section.informations, section.offer {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.informations a {
+  background-color: #343a40;
+  color: #fff;
+  font-size: 1.2em;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+
+section.offer {
+  height: 85vh;
+  background-color: #8c654c;
+}
+
+section.offer .icons {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+section.offer .icons i {
+  padding: 30px;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #8b654c;
+  border-radius: 50%;
+  font-size: 60px;
+}
+
+section.offer .icons .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.offer .icons .item h2 {
+  font-size: 1.7em;
+}
+
+section.offer h1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  margin-bottom: 0;
+}
+
+section.offer p {
+  font-size: 2em;
+  margin-bottom: 50px;
+}
+
+section.plus {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('../img/bakery.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.plus div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 10vh;
+  margin-top: 20vh;
+}
+
+section.plus div h1, section.plus div p {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 3em;
+  text-align: center;
+}
+
+section.plus div p {
+  font-size: 1.5em;
+}
+
+section.plus a {
+  background-color: #343a40;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 50%;
+  padding: 15px 20px;
+  margin-bottom: 3vh;
+}
+
+section.plus a:hover i {
+  color: limegreen;
+  transition: all 1s;
+  transform: rotate(360deg);
+}
+
+section.products {
+  height: 140vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.products .handler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.products .handler .title {
+  text-align: center;
+}
+
+section.products .handler .product {
+  height: 50vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  transition: transform .4s linear, filter .4s linear;
+  color: #fff;
+}
+
+section.products .handler .product:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+  filter: grayscale(60%);
+}
+
+section.products .handler .product h2 {
+  font-size: 1.6em;
+  margin-left: 30px;
+}
+
+section.products .handler .product p {
+  font-size: 1.2em;
+  margin: 0 0 50px 30px;
+}
+
+.bread {
+  background-image: url('../img/bread.jpg');
+  background-size: cover;
+}
+
+.bacon {
+  background-image: url('../img/bacon.jpg');
+  background-size: cover;
+}
+
+.coffee {
+  background-image: url('../img/coffee.jpg');
+  background-size: cover;
+  filter: contrast(1.4);
+}
+
+.cheese {
+  background-image: url('../img/cheese.jpg');
+  background-size: cover;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  height: 50vh;
+  width: 100%;
+}
+
+.gmap_canvas iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.custom-collapse {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.custom-collapse ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: transparent;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 30vh;
+  width: 100%;
+  background-color: #343a40;
+  color: #fff;
+}
+
+footer .icons {
+  width: 40vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer .icons i {
+  background-color: #fff;
+  color: #343a40;
+  border-radius: 50%;
+  padding: 20px;
+  font-size: 2em;
+}
+
+
+@media screen and (max-width: 540px) {
+  section.main-content h1 {
+    font-size: 3em;
+  }
+
+  section.informations h1 {
+    font-size: 1.2em;
+  }
+
+  section.informations p {
+    font-size: 0em;
+  }
+
+  section.offer {
+    height: 100vh;
+  }
+
+  section.offer .icons .item {
+    text-align: center;
+  }
+
+  section.plus {
+    height: 100vh;
+  }
+
+  section.products {
+    height: 100vh;
+    margin-top: 65vh;
+  }
+
+  section.map {
+    margin-top: 65vh;
+  }
+}

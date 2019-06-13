@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Index</title>
+</head>
+<body>
+  <header>
+    <nav class="col-12 navbar navbar-expand-lg navbar-dark">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <span>Tinker's</span>
+      </a>
+
+      <button class="custom-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="custom-collapse collapse navbar-collapse" id="navbarSupportedContent">
+        <ul id="menu" class="navbar-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#infos">About Us</a></li>
+          <li><a href="#offer">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="main-content d-flex justify-content-center align-items-center flex-column">
+      <h1>Tinker's Bakery</h1>
+      <p>The Best Bakery Ever</p>
+      <a href="#infos">See More</a>
+    </section>
+
+    <a class="d-none goTop" href="#">^</a>
+
+    <section id="infos" class="informations">
+      <h1>Tinker's Bakery was made to improve your belly!</h1>
+      <p>We have the best options of breads and cakes</p>
+      <a href="#offer">What we offer</a>
+    </section>
+
+    <section id="offer" class="offer">
+      <h1>Services</h1>
+      <p>What we offer</p>
+      <div class="icons row">
+        <div class="item col-6 col-sm-3 col-md-3 col-lg-3">
+          <i class="fa fa-bread-slice"></i>
+          <h2>Breads</h2>
+          <span>Breakfeast Breakfeast</span>
+        </div>
+        <div class="item col-6 col-sm-3 col-md-3 col-lg-3">
+          <i class="fa fa-bacon"></i>
+          <h2>Bacon</h2>
+          <span>Breakfeast Breakfeast</span>
+        </div>
+        <div class="item col-6 col-sm-3 col-md-3 col-lg-3">
+          <i class="fa fa-coffee"></i>
+          <h2>Coffee</h2>
+          <span>Breakfeast Breakfeast</span>
+        </div>
+        <div class="item col-6 col-sm-3 col-md-3 col-lg-3">
+          <i class="fa fa-cheese"></i>
+          <h2>Cheese</h2>
+          <span>Breakfeast Breakfeast</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="plus">
+      <div>
+        <h1 class="col-12">We make the difference</h1>
+        <p class="col-10">Making the best bread since 90's</p>
+      </div>
+      <a href="#products">
+        <i class="fa fa-angle-double-down"></i>
+      </a>
+    </section>
+
+    <section id="products" class="products container">
+      <div class="row handler">
+        <div class="title col-12">
+          <h1>All products</h1>
+          <p>Check out our best products</p>
+        </div>
+        <div class="product bread col-11 col-md-6 col-sm-5">
+          <h2>Breads</h2>
+          <p>text text text text</p>
+        </div>
+        <div class="product bacon col-11 col-md-6 col-sm-5">
+          <h2>Bacon</h2>
+          <p>text text text text</p>
+        </div>
+        <div class="product coffee col-11 col-md-6 col-sm-5">
+          <h2>Coffee</h2>
+          <p>text text text text</p>
+        </div>
+        <div class="product cheese col-11 col-md-6 col-sm-5">
+          <h2>Cheese</h2>
+          <p>text text text text</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=Av%20Doutor%20Cardoso%20de%20Melo%2C%2090&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="icons">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+      <span>Copyright &copy; Digitalhouse</span>
+    </footer>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="assets/js/main.js" charset="utf-8"></script>
+</body>
+</html>
