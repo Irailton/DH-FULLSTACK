@@ -1,0 +1,38 @@
+body{
+    font-family: sans-serif;
+    background-image: url(../img/fundo-01.png);
+    background-attachment: fixed;
+}
+h2,h3,h4,h5,h6{
+    color: #192a56;
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+    background-color: rgba(11, 66, 24, 0.5)
+}
+li{
+    text-align: justify;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.passatempo img{
+    width: 360px;
+}
+
+.titulo{
+    text-decoration: none;
+}
+
+.passatempo video{
+    width: 640px;
+}
+.destaque{
+    font-size: 20px;
+    text-align: justify;
+    background-color: #A5D6A7;
+    color: #000;
+    line-height: 25px;
+}
