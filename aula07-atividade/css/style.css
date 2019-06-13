@@ -1,0 +1,110 @@
+/* ## EXERCÍCIO 1C */
+	* {
+		box-sizing: border-box;
+		/*margin: 0;
+		padding: 0;*/
+		scroll-behavior: smooth;
+	}
+
+	body {
+		margin: 0;
+		font-size: 16px;
+		width: 100vw; /* Não é realmente necessário, mas garante que a largura do body será igual à largura da tela do dispositivo */
+	}
+
+/* EXERCÍCIO 2C */
+	header {
+		width: 100vw;
+		height: 20vh;
+		border: 1px dashed #2f346f;
+		background-color: #bfc3e8;
+	}
+
+/* ## EXERCÍCIO 2A */
+	main {
+		max-width: 1200px;
+		height: 150px;
+		border: 1px dashed #9c9c9c;
+		background-color: #d8d8d8;
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		align-items: stretch;
+		margin: auto;
+	}
+
+/* EXERCÍCIO 2B */
+	section {
+		border: 1px dotted #964646;
+		background-color: #f9d0d0;
+		flex: 1 1 auto;
+		overflow-y: scroll;
+	}
+
+/* EXERCÍCIO 2B1 */
+	#caixaA {
+		width: 20.33%
+	}
+
+/* EXERCÍCIO 2B2 */
+	#caixaB {
+		width: 66.66%;
+/* EXERCÍCIO 2B2 e 2B4 */
+		margin: 0 2.083%;
+	}
+
+/* EXERCÍCIO 2B3 */
+	#caixaC {
+		width: 8.33%;
+	}
+
+/* EXERCÍCIO 2Di */
+	h2 {
+		font-size: 1.75em;
+	}
+
+/* EXERCÍCIO 2Dii */
+	p {
+		font-size: 0.8125em;
+	}
+	p strong {
+		font-size: 1.15em;
+	}
+
+/* EXERCÍCIO 3A */
+
+/* ## ATENÇÃO: essa maneira é o modo MOBILE LAST, estamos codando para uma resolução maior e depois ajustando para resoluções menores (através da condição max-width, ou seja, 'larguras de no máximo'). No caso do Mobile First, partimos de uma resolução menor e vamos ajustando para resoluções maiores (com o min-width, ou seja, para 'resolução a partir de') ## */
+
+	@media only screen and (max-width: 900px) {
+		main {
+			width: 95vw;
+			flex-wrap: wrap;
+		}
+		#caixaA {
+			width: 40%;
+			flex: 0 0 auto;
+		}
+		#caixaB {
+			width: 55%;
+			flex: 0 0 auto;
+			margin: 0;
+		}
+		#caixaC {
+			width: 100%;
+			flex: 0 0 auto;
+		}
+	}
+
+/* EXERCÍCIO 3B */
+	@media only screen and (max-width: 450px) {
+		body {
+			font-size: 3em;
+		}
+		main {
+			flex-flow: column nowrap;
+			align-items: stretch;
+		}
+		section {
+			min-width: 100%;
+		}
+	}
