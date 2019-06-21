@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <script>
+
+        var skills = [ " Javascript " , " ReactJS " , " Reagir Nativa " ];
+        function temHabilidade(skills){
+            return skills.indexOf(" ReactJS ") !==-1;
+
+        }
+        
+        console.log(temHabilidade(skills));
+
+        var anosDeEstudo = 7;
+        function experiencia(anos) {
+            var x = anos;
+            if(x>0 && x<=1){
+                return 'Iniciante';
+            }else if(x>1 && x<=3){
+                return 'Intemediário';
+                
+            }else if(x>3 && x<=6){
+                return 'Avançado';
+            }else if(x>=7){
+                return 'Jedi Master';
+
+            }
+            return resultado;
+            }
+         var resultado = experiencia(anosDeEstudo);
+         console.log(resultado);
+
+
+
+        var usuarios = [
+        {
+        nome: "Diego",
+        habilidades: ["Javascript", "ReactJS", "Redux"]
+        },
+        {
+        nome: "Gabriel",
+        habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+        }
+        ];
+
+
+         function exibirHabilidades(usuarios){
+             for (usuario of usuarios){
+                 console.log("O "+usuario.nome+" possui as habilidades: "+usuario.habilidades.join(", "));
+
+             }
+             
+         }
+
+         var resultado = exibirHabilidades(usuarios);
+         console.log(resultado);
+ 
+    
+
+    
+    </script>
+</body>
+</html>
